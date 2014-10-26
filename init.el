@@ -65,11 +65,7 @@
 (add-to-list 'process-coding-system-alist
              '("powershell.exe" . (cp866-dos . cp866-dos)))
 
-;; Fix the shift-selection broken by the starter kit:
-(global-unset-key (kbd "S-<left>"))
-(global-unset-key (kbd "S-<right>"))
-(global-unset-key (kbd "S-<up>"))
-(global-unset-key (kbd "S-<down>"))
+;; Enable shift-arrow selection:
 (setq shift-select-mode t)
 
 ;; Fix the auto-fill-mode starting in the starter kit:
