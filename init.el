@@ -37,13 +37,14 @@
 (server-start)
 
 (setq package-list '(batch-mode
-                    graphviz-dot-mode
-					gruber-darker-theme
-					haskell-mode
-					multiple-cursors
-					paredit
-					powershell
-					rust-mode))
+                     coffee-mode
+                     graphviz-dot-mode
+                     gruber-darker-theme
+                     haskell-mode
+                     multiple-cursors
+                     paredit
+                     powershell
+                     rust-mode))
 
 (setq package-archives '(("elpa" . "http://tromey.com/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")
