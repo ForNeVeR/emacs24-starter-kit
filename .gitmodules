@@ -1,0 +1,3 @@
+[submodule ".\\3rd-patry/proofgeneral"]
+	path = .\\3rd-patry/proofgeneral
+	url = https://github.com/emacsattic/proofgeneral.git
