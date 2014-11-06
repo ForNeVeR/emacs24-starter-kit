@@ -85,7 +85,7 @@
 (add-to-list 'auto-mode-alist '("\\.bat\\'" . batch-mode))
 
 ;; proof general
-;(load "ProofGeneral-4.2/generic/proof-site.el")
+(load "~/.emacs.d/3rd-party/proofgeneral/generic/proof-site.el")
 
 ;; SLIME
 ;(add-to-list 'load-path (concat (file-name-directory load-file-name) "slime-2.9"))
