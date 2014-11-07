@@ -54,3 +54,4 @@ agent/*
 
 ## ForNeVeR additions:
 /server/
+!3rd-party/*.el
