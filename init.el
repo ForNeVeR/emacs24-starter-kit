@@ -66,9 +66,6 @@
 (add-to-list 'process-coding-system-alist
              '("powershell.exe" . (cp866-dos . cp866-dos)))
 
-;; Enable shift-arrow selection:
-(setq shift-select-mode t)
-
 ;; Fix the auto-fill-mode starting in the starter kit:
 (remove-hook 'text-mode-hook #'turn-on-auto-fill)
 

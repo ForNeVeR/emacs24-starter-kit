@@ -44,7 +44,7 @@ evaluated a theme is activated using the =load-theme= function.
         transient-mark-mode t
         color-theme-is-global t
         delete-by-moving-to-trash t
-        shift-select-mode nil
+        shift-select-mode t
         truncate-partial-width-windows nil
         uniquify-buffer-name-style 'forward
         whitespace-style '(trailing lines space-before-tab
