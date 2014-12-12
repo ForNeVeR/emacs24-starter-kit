@@ -36,7 +36,8 @@
 
 (server-start)
 
-(setq package-list '(batch-mode
+(setq package-list '(auto-complete
+                     batch-mode
                      coffee-mode
                      graphviz-dot-mode
                      gruber-darker-theme
@@ -46,15 +47,13 @@
                      powershell
                      rust-mode))
 
-(setq package-archives '(("elpa" . "http://tromey.com/elpa/")
-                         ("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+(add-to-list 'package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
+                                 ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 ; activate all the packages (in particular autoloads)
 (package-initialize)
 
-; fetch the list of packages available 
+; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
 
@@ -114,6 +113,10 @@
 (add-to-list 'default-frame-alist '(font . "Liberation Mono-10"))
 (set-fontset-font
  nil '(#x1d539 . #x1d539) (font-spec :family "DejaVu Sans"))
+
+;; auto-complete:
+(require 'auto-complete-config)
+(ac-config-default)
 
 ;;; ForNeVeR configuration ends here
 
