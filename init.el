@@ -45,10 +45,11 @@
                      multiple-cursors
                      paredit
                      powershell
-                     rust-mode))
+                     rust-mode
+                     tabbar))
 
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ; activate all the packages (in particular autoloads)
 (package-initialize)
@@ -71,19 +72,9 @@
 ;; linum-mode:
 (global-linum-mode 1)
 
-;; scrollbar-mode:
-(scroll-bar-mode -1)
-
-(add-to-list 'auto-mode-alist '("\\.cmd\\'" . batch-mode))
-(add-to-list 'auto-mode-alist '("\\.bat\\'" . batch-mode))
-
 ;; proof general
 (load "~/.emacs.d/3rd-party/proofgeneral/generic/proof-site.el")
 (load "~/.emacs.d/3rd-party/pg-ssr.el")
-
-;; SLIME
-;(add-to-list 'load-path (concat (file-name-directory load-file-name) "slime-2.9"))
-;(load "slime-2.9/slime-autoloads.el")
 
 ;; multiple-cursors
 (require 'multiple-cursors)
@@ -97,6 +88,29 @@
 (load-theme 'gruber-darker t)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+(scroll-bar-mode -1)
+
+;; Tabbar:
+(require 'tabbar)
+
+(global-set-key [C-S-tab] 'tabbar-backward-tab)
+(global-set-key [C-tab] 'tabbar-forward-tab)
+
+(set-face-foreground 'tabbar-default "LightSteelBlue")
+(set-face-background 'tabbar-default "DarkSlateGray")
+(set-face-foreground 'tabbar-selected "pale green")
+(set-face-bold-p 'tabbar-selected t)
+(set-face-attribute 'tabbar-button nil :box '(:line-width 1 :color "gray72"))
+
+(setq tabbar-buffer-groups-function
+      (lambda () 
+        (list
+         (cond
+          ((find (aref (buffer-name (current-buffer)) 0) " *") "*")
+          (t "All Buffers"))
+         )))
+
+(tabbar-mode)
 
 ;; Global editor settings:
 (setq default-file-name-coding-system 'cp1251)
