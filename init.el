@@ -47,8 +47,8 @@
                      powershell
                      rust-mode))
 
-(add-to-list 'package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
-                                 ("melpa" . "http://melpa.milkbox.net/packages/")))
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 
 ; activate all the packages (in particular autoloads)
 (package-initialize)
@@ -71,12 +71,9 @@
 ;; linum-mode:
 (global-linum-mode 1)
 
-;; powershell-mode
-;(let ((current-directory (file-name-directory load-file-name)))
-;  (add-to-list 'load-path current-directory))
-;(load "PowerShell-Mode.el")
-;(add-to-list 'auto-mode-alist '("\\.ps1\\'" . powershell-mode))
-;(add-to-list 'auto-mode-alist '("\\.psm1\\'" . powershell-mode))
+;; scrollbar-mode:
+(scroll-bar-mode -1)
+
 (add-to-list 'auto-mode-alist '("\\.cmd\\'" . batch-mode))
 (add-to-list 'auto-mode-alist '("\\.bat\\'" . batch-mode))
 

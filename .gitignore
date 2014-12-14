@@ -4,7 +4,6 @@
 ## misc
 loaddefs.el*
 auto-save-list
-custom.el
 places
 .svn
 .DS_Store
@@ -54,4 +53,6 @@ agent/*
 
 ## ForNeVeR additions:
 /server/
+ac-comphist.dat
 !3rd-party/*.el
+!custom.el
