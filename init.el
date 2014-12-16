@@ -42,6 +42,7 @@
                      graphviz-dot-mode
                      gruber-darker-theme
                      haskell-mode
+                     minimap
                      multiple-cursors
                      paredit
                      powershell
