@@ -36,6 +36,8 @@
 
 (server-start)
 
+(add-to-list 'package-pinned-packages '(minimap . "gnu") t)
+
 (setq package-list '(auto-complete
                      batch-mode
                      coffee-mode
