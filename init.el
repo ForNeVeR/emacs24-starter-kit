@@ -49,7 +49,8 @@
                      paredit
                      powershell
                      rust-mode
-                     tabbar))
+                     tabbar
+                     tss))
 
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -66,8 +67,12 @@
   (unless (package-installed-p package)
     (package-install package)))
 
+;; Encoding fix in PowerShell buffers:
 (add-to-list 'process-coding-system-alist
              '("powershell.exe" . (cp866-dos . cp866-dos)))
+
+;; Enable file modes:
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode) t)
 
 ;; Fix the auto-fill-mode starting in the starter kit:
 (remove-hook 'text-mode-hook #'turn-on-auto-fill)
