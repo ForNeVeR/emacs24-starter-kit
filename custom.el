@@ -3,7 +3,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(minimap-major-modes (quote (prog-mode coq-mode)))
+ '(fill-column 120)
+ '(minimap-major-modes (quote (prog-mode coq-mode tex-mode)))
  '(minimap-minimum-width 10)
  '(minimap-mode t)
  '(minimap-recenter-type (quote free))
