@@ -48,6 +48,7 @@
                      multiple-cursors
                      paredit
                      powershell
+                     purescript-mode
                      rust-mode
                      tabbar
                      tss))
