@@ -85,6 +85,9 @@
 (load "~/.emacs.d/3rd-party/proofgeneral/generic/proof-site.el")
 (load "~/.emacs.d/3rd-party/pg-ssr.el")
 
+;; cil-mode
+(load "~/.emacs.d/3rd-party/cil-mode/cil-mode.el")
+
 ;; multiple-cursors
 (require 'multiple-cursors)
 (global-set-key (kbd "M-C-<up>") 'mc/mark-previous-like-this)
