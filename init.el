@@ -139,6 +139,7 @@
 ;; auto-complete:
 (require 'auto-complete-config)
 (ac-config-default)
+(global-set-key (kbd "C-SPC") 'auto-complete)
 
 ;;; ForNeVeR configuration ends here
 
