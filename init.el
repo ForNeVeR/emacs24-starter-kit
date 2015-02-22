@@ -41,6 +41,8 @@
 (setq package-list '(auto-complete
                      batch-mode
                      coffee-mode
+                     cil-mode
+                     fsharp-mode
                      graphviz-dot-mode
                      gruber-darker-theme
                      haskell-mode
@@ -84,9 +86,6 @@
 ;; proof general
 (load "~/.emacs.d/3rd-party/proofgeneral/generic/proof-site.el")
 (load "~/.emacs.d/3rd-party/pg-ssr.el")
-
-;; cil-mode
-(load "~/.emacs.d/3rd-party/cil-mode/cil-mode.el")
 
 ;; multiple-cursors
 (require 'multiple-cursors)

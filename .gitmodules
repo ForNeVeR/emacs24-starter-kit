@@ -1,6 +1,3 @@
 [submodule "3rd-party/proofgeneral"]
 	path = 3rd-party/proofgeneral
 	url = https://github.com/emacsattic/proofgeneral.git
-[submodule "3rd-party/cil-mode"]
-	path = 3rd-party/cil-mode
-	url = git@github.com:ForNeVeR/cil-mode.git
