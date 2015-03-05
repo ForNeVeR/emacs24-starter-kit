@@ -46,6 +46,7 @@
                      graphviz-dot-mode
                      gruber-darker-theme
                      haskell-mode
+                     markdown-mode
                      minimap
                      multiple-cursors
                      paredit
