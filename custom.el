@@ -10,6 +10,10 @@
  '(minimap-recenter-type (quote free))
  '(minimap-width-fraction 0.2)
  '(minimap-window-location (quote right))
+ '(safe-local-variable-values
+   (quote
+    ((haskell-process-use-ghci . t)
+     (haskell-indent-spaces . 4))))
  '(tabbar-background-color nil)
  '(tabbar-mode t nil (tabbar)))
 (custom-set-faces
