@@ -43,6 +43,8 @@
                      coffee-mode
                      cil-mode
                      fsharp-mode
+                     gradle-mode
+                     groovy-mode
                      graphviz-dot-mode
                      gruber-darker-theme
                      haskell-mode
