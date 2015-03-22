@@ -50,6 +50,7 @@
                      markdown-mode
                      minimap
                      multiple-cursors
+                     neotree
                      paredit
                      powershell
                      purescript-mode
@@ -59,7 +60,7 @@
                      yaml-mode))
 
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 ; activate all the packages (in particular autoloads)
 (package-initialize)
@@ -82,6 +83,10 @@
 
 ;; Fix the auto-fill-mode starting in the starter kit:
 (remove-hook 'text-mode-hook #'turn-on-auto-fill)
+
+;; neotree:
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
 
 ;; linum-mode:
 (global-linum-mode 1)
