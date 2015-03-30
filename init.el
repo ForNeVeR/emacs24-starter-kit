@@ -42,6 +42,7 @@
                      batch-mode
                      coffee-mode
                      cil-mode
+                     elixir-mode
                      fsharp-mode
                      gradle-mode
                      graphviz-dot-mode
