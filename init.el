@@ -48,6 +48,7 @@
                      graphviz-dot-mode
                      gruber-darker-theme
                      haskell-mode
+                     less-css-mode
                      markdown-mode
                      minimap
                      multiple-cursors
