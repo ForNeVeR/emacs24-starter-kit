@@ -42,6 +42,7 @@
                      batch-mode
                      coffee-mode
                      cil-mode
+                     editorconfig
                      elixir-mode
                      fsharp-mode
                      gradle-mode
