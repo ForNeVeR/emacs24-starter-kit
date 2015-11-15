@@ -53,6 +53,7 @@ agent/*
 
 ## ForNeVeR additions:
 /server/
+/.cask/
 ac-comphist.dat
 !3rd-party/*.el
 !custom.el

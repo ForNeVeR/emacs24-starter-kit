@@ -40,6 +40,7 @@
 
 (setq package-list '(auto-complete
                      batch-mode
+                     cask-package-toolset
                      coffee-mode
                      cil-mode
                      editorconfig
@@ -142,8 +143,8 @@
 (setq default-tab-width 4)
 
 (setq default-input-method "russian-computer")
-(set-face-attribute 'default t :font "Liberation Mono-10")
-(add-to-list 'default-frame-alist '(font . "Liberation Mono-10"))
+(set-face-attribute 'default t :font "Classic Console-16")
+(add-to-list 'default-frame-alist '(font . "Classic Console-16"))
 (set-fontset-font
  nil '(#x1d539 . #x1d539) (font-spec :family "DejaVu Sans"))
 
