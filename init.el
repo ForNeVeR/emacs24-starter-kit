@@ -55,6 +55,7 @@
                      minimap
                      multiple-cursors
                      neotree
+                     nix-mode
                      paredit
                      powershell
                      purescript-mode
@@ -143,8 +144,8 @@
 (setq default-tab-width 4)
 
 (setq default-input-method "russian-computer")
-(set-face-attribute 'default t :font "Classic Console-16")
-(add-to-list 'default-frame-alist '(font . "Classic Console-16"))
+(set-face-attribute 'default t :font "Liberation Mono-13")
+(add-to-list 'default-frame-alist '(font . "Liberation Mono-13"))
 (set-fontset-font
  nil '(#x1d539 . #x1d539) (font-spec :family "DejaVu Sans"))
 
